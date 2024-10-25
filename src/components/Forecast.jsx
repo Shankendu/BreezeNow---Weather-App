@@ -415,7 +415,7 @@ const Forecast = () => {
               id="left"
               className="w-50% h-full text-[#E9E9E9] space-y-3"
             >
-            {/* {
+            {
                 Object.entries(airPollutionData).map((e,i)=>{
                     return(
                         <h1 key={i} className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
@@ -426,8 +426,8 @@ const Forecast = () => {
               </h1>
                     )
                 })
-            } */}
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+            }
+              {/* <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   CO :
                 </span>{" "}
@@ -475,7 +475,7 @@ const Forecast = () => {
                   NH<sub>3</sub> :
                 </span>{" "}
                 {airPollutionData.nh3} &#181;m/g<sup>3</sup>
-              </h1>
+              </h1> */}
             </section>
           </div>
         </div>
