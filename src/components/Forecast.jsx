@@ -175,7 +175,7 @@ const Forecast = () => {
 
   //! Air pollution api
   const airPollution = async (lat, lon) => {
-    let pollutionURL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${
+    let pollutionURL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${
       import.meta.env.VITE_APP_KEY
     }`;
     await axios.get(pollutionURL).then((e) => {
