@@ -224,7 +224,7 @@ const Forecast = () => {
         <div className="h-[30%] w-[100%] mb-[1%] rounded-2xl flex justify-evenly items-center p-5">
           <div
             id="weatherDataLeft"
-            className="h-full w-fit lg:w-[50%] pl-3 lg:pl-14 flex flex-col justify-center"
+            className="h-full w-fit lg:w-[50%] lg:pl-14 flex flex-col justify-center"
           >
             <h1 className="font-black text-3xl lg:text-5xl text-[#E9E9E9]">
               {weatherData.city}
@@ -232,16 +232,16 @@ const Forecast = () => {
             <h3 className="font-semibold text-lg mt-1 mb-5 text-[#e9e9e99f]">
               {weatherData.weather}
             </h3>
-            <h2 className="font-extrabold text-4xl lg:text-6xl text-[#E9E9E9]">
+            <h2 className="font-extrabold text-3xl lg:text-6xl text-[#E9E9E9]">
               {Math.floor(weatherData.temp)}&deg;C
             </h2>
           </div>
           <div
             id="weatherDataRight"
-            className="h-full w-fit lg:w-[50%] flex items-center justify-center"
+            className="h-full w-fit lg:w-[50%] flex items-center justify-end"
           >
             <img
-              className="h-44 lg:h-52"
+              className="h-28 sm:h-36 lg:h-52"
               src={weatherData.icon}
               alt="weather"
             />
