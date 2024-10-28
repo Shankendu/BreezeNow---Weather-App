@@ -291,7 +291,7 @@ const Forecast = () => {
         </div>
 
         {/* 4th Data Block */}
-        <div className=" h-[200px] lg:h-[30%] w-[100%] bg-[#393A5A] rounded-2xl p-5 lg:mt-0 mt-5">
+        <div className=" h-[250px] lg:h-[30%] w-[100%] bg-[#393A5A] rounded-2xl p-5 lg:mt-0 mt-5">
           <div className="w-full h-full pb-5">
             <h1 className="text-sm font-poppins font-bold text-[#E9E9E9]">
               AIR CONDITIONS
@@ -356,7 +356,7 @@ const Forecast = () => {
         className=" w-full lg:w-[30%] h-[200px] lg:h-full rounded-2xl lg:mt-0 mt-5"
       >
         {/* Time and details */}
-        <div className=" h-full lg:h-[50%] w-full bg-[#393A5A] mb-[2%] rounded-2xl p-5 relative">
+        <div className=" h-[250px] lg:h-[50%] w-full bg-[#393A5A] mb-[2%] rounded-2xl p-5 relative">
           <div className=" h-full w-[calc(100%-20px)] absolute">
             <h1 className="text-[#E9E9E9] text-sm lg:text-lg font-poppins font-black w-full">
               {localTime}
