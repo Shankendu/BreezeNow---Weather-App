@@ -198,7 +198,7 @@ const Forecast = () => {
   return loading ? (
     <Shimmer />
   ) : (
-    <div className="lg:my-5 px-5 lg:px-0 lg:mr-5 lg:h-[calc(100vh-40px)] h-fit w-screen flex flex-col lg:flex-row ">
+    <div className="lg:py-5 px-5 lg:px-0 lg:pr-5 lg:h-screen h-fit w-screen flex flex-col lg:flex-row ">
       <div id="leftForecast" className=" w-full lg:w-[70%] h-full mr-5">
         {/*  Search bar */}
         <div className="h-[50px] lg:h-[6%] w-[100%] mb-[1%] bg-[#393A5A] rounded-xl flex items-center relative">
@@ -260,7 +260,7 @@ const Forecast = () => {
                   return (
                     <div
                       key={i}
-                      className="flex flex-row lg:flex-col justify-between lg:justify-center items-center h-full w-full lg:w-[17%] border-b-2 lg:border-r-2 lg:border-b-0 border-[#e9e9e99f]"
+                      className="flex flex-row lg:flex-col justify-between lg:justify-center items-center h-full w-full lg:w-[17%] border-b-2 lg:border-r-2 lg:border-b-0 border-[#e9e9e99f] last:border-none"
                     >
                       <h1 className="text-sm lg:text-base font-bold font-poppins text-[#e9e9e99f]">
                         {e.dt_txt.slice(11, 16) > "12:00"
@@ -353,7 +353,7 @@ const Forecast = () => {
       {/* RightForcast */}
       <div
         id="rightForecast"
-        className=" w-full lg:w-[30%] h-[200px] lg:h-full rounded-2xl lg:mt-0 mt-5"
+        className=" w-full lg:w-[30%] h-[200px] lg:h-[100%] rounded-2xl lg:mt-0 mt-5 lg:mb-5"
       >
         {/* Time and details */}
         <div className=" h-[250px] lg:h-[50%] w-full bg-[#393A5A] mb-[2%] rounded-2xl p-5 relative">
@@ -406,14 +406,14 @@ const Forecast = () => {
         </div>
 
         {/* Air Pollution */}
-        <div className="h-fit lg:h-[50%] w-full bg-[#393A5A] rounded-2xl p-5 lg:mt-0 mt-5 ">
+        <div className="h-fit lg:h-[50%] size-full w-full bg-[#393A5A] rounded-2xl p-5 lg:mt-0 mt-5 ">
           <h1 className="text-sm font-poppins font-bold text-[#E9E9E9]">
             AIR POLLUTION
           </h1>
-          <div className="h-fit w-full my-3 text-sm lg:text-sm font-poppins">
+          <div className="h-fit w-full my-3 text-sm lg:text-sm min-[h]:1024px font-poppins">
             <section
               id="left"
-              className="w-50% h-full text-[#E9E9E9] space-y-3"
+              className="w-50% h-full text-[#E9E9E9]"
             >
             {/* {
                 Object.entries(airPollutionData).map((e,i)=>{
@@ -427,50 +427,50 @@ const Forecast = () => {
                     )
                 })
             } */}
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   CO :
                 </span>{" "}
                 {airPollutionData.co} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   NO :
                 </span>{" "}
                 {airPollutionData.no} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3 ">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   NO<sub>2</sub> :
                 </span>{" "}
                 {airPollutionData.no2} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   O<sub>3</sub> :
                 </span>{" "}
                 {airPollutionData.o3} &#181;m/g<sup>3</sup>
               </h1>
 
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   SO<sub>2</sub> :
                 </span>{" "}
                 {airPollutionData.so2} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   PM<sub>10</sub> :
                 </span>{" "}
                 {airPollutionData.pm10} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   PM<sub>2.5</sub> :
                 </span>{" "}
                 {airPollutionData.pm2_5} &#181;m/g<sup>3</sup>
               </h1>
-              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9]">
+              <h1 className=" text-sm lg:text-[15px] font-poppins font-extrabold text-[#E9E9E9] lg:pb-3">
                 <span className="text-sm lg:text-[15px] font-poppins font-normal text-[#e9e9e99f]">
                   NH<sub>3</sub> :
                 </span>{" "}
